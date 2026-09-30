@@ -1,0 +1,26 @@
+{
+  "recordedAt": "2026-09-30T13:52:35.423339+08:00",
+  "temporaryURL": "https://gentle-dts-algorithm-yukon.trycloudflare.com/",
+  "checks": {
+    "homepage": 200,
+    "app_js": 200,
+    "styles_css": 200,
+    "api_status": 200,
+    "announcements": 200,
+    "analyze_post_with_same_origin": 200
+  },
+  "realReport": {
+    "company": "拓普集团",
+    "title": "拓普集团2026年半年度报告",
+    "pageCount": 188,
+    "candidateCount": 24,
+    "sha256": "762f31df5ffde5a346ebf946c17f34d8e3a33777fc43f71d521e5a434ec03416",
+    "modelUsed": false
+  },
+  "limits": [
+    "当前网络HTTP验证不等于中国大陆多运营商验证",
+    "必须保持本机服务和隧道运行；无长期可用性保证",
+    "完整浏览器视觉检查未完成",
+    "EdgeOne匿名预览仍返回401，未作为交付URL"
+  ]
+}
