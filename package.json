@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node --env-file-if-exists=.env server/local.mjs",
     "build": "node scripts/build.mjs",
-    "test": "node --test tests/backend.test.mjs tests/audit.test.mjs",
+    "test": "node --test tests/backend.test.mjs tests/audit.test.mjs tests/ifind.test.mjs",
     "test:dom": "node tests/dom-v2.mjs"
   },
   "dependencies": {

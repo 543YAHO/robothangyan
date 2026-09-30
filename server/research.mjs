@@ -1,6 +1,7 @@
 import {createHash} from 'node:crypto';
 import {seed} from './seed.mjs';
 import {parsePDF} from './pdf.mjs';
+import {handleMarket,dataProviderStatus} from './market.mjs';
 const ALLOWED_HOSTS=new Set(['static.cninfo.com.cn','www.cninfo.com.cn','www1.hkexnews.hk','www.hkexnews.hk','www.sec.gov','www.hds.co.jp']);
 const cache=new Map();
 const rates=new Map();
@@ -171,7 +172,8 @@ export async function handle(request,env={}){
  try{
   env=modelConfig(env);
   const u=new URL(request.url);const route=u.pathname.replace(/\/$/,'');
-  if(request.method==='GET'&&route==='/api/status')return response({ok:true,version:seed.version,mode:env.MODEL_API_KEY&&env.MODEL_ENDPOINT&&env.MODEL_NAME?'model_configured':'rules_only',dataProviders:{publicDisclosures:true,fuyao:false,ifind:false},manualUpdates:true});
+  if(route==='/api/providers'||route==='/api/quotes')return handleMarket(request,env);
+  if(request.method==='GET'&&route==='/api/status'){const provider=dataProviderStatus(env);return response({ok:true,version:seed.version,mode:env.MODEL_API_KEY&&env.MODEL_ENDPOINT&&env.MODEL_NAME?'model_configured':'rules_only',dataProviders:{publicDisclosures:true,fuyao:false,ifind:provider.ifind.state==='verified'},providerReadiness:{ifindHttp:provider.ifind.state,ifindMcp:provider.ifindMcp.state,fuyao:provider.fuyao.state},manualUpdates:true});}
   if(request.method==='GET'&&route==='/api/announcements')return response(await listAnnouncements(u.searchParams.get('company')));
   if(request.method==='POST'&&route==='/api/analyze'){
    const origin=request.headers.get('origin');const publicOrigin=env.PUBLIC_ORIGIN||u.origin;if(origin&&origin!==publicOrigin)throw new ResearchError('ORIGIN_DENIED','请求来源不匹配。',403);

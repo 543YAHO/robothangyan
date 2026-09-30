@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-09-30T09:01:33.020277+00:00",
+  "checkedAt": "2026-09-30T09:45:52.576873+00:00",
   "backendDataFaultCompliance": {
-    "passed": 57,
+    "passed": 74,
     "cases": [
       {
         "name": "概念板块或ETF成员不能建立业务关系",
@@ -230,11 +230,79 @@
       {
         "name": "超长请求被拒绝",
         "result": "PASS"
+      },
+      {
+        "name": "iFinD无凭证不发请求，也不声称已接通",
+        "result": "PASS"
+      },
+      {
+        "name": "官方固定端点与headers换取令牌，令牌及15秒快照缓存有效",
+        "result": "PASS"
+      },
+      {
+        "name": "401只换取一次令牌，后续优先使用已刷新的令牌",
+        "result": "PASS"
+      },
+      {
+        "name": "持续401不循环重试，业务错误码不猜成可自动刷新",
+        "result": "PASS"
+      },
+      {
+        "name": "429、5xx、坏JSON、无效令牌响应与网络错误脱敏",
+        "result": "PASS"
+      },
+      {
+        "name": "超时中止、流中断及超大响应不产出半份行情",
+        "result": "PASS"
+      },
+      {
+        "name": "行情代码逐一对齐，错代码、重复、多期或缺字段拒绝",
+        "result": "PASS"
+      },
+      {
+        "name": "空白或缺失值不填0，源站0标待核，异常数字拒绝",
+        "result": "PASS"
+      },
+      {
+        "name": "提供方时间与查询时间分开，未返回时间不伪称实时",
+        "result": "PASS"
+      },
+      {
+        "name": "无有效报价不能验证成功，部分返回保留缺失行",
+        "result": "PASS"
+      },
+      {
+        "name": "网络失败保留最后成功时间，权限撤销后清除验证状态",
+        "result": "PASS"
+      },
+      {
+        "name": "并发与本机限流限制请求，失败可重试且未缓存",
+        "result": "PASS"
+      },
+      {
+        "name": "仅登记A股、请求上限与同源限制；配置和展示许可不能互相替代",
+        "result": "PASS"
+      },
+      {
+        "name": "API映射回对应公司且不修改证据，合成响应不落入产品基线",
+        "result": "PASS"
+      },
+      {
+        "name": "行情DOM：无凭证和无展示许可时禁用取数",
+        "result": "PASS"
+      },
+      {
+        "name": "行情DOM：刷新网络失败标旧，权限失效清除旧行情",
+        "result": "PASS"
+      },
+      {
+        "name": "行情DOM：错公司或坏数字不替换旧快照，停用许可清除旧行情",
+        "result": "PASS"
       }
     ]
   },
   "dom": {
-    "checkedAt": "2026-09-30T09:01:32.786Z",
+    "checkedAt": "2026-09-30T09:45:03.027Z",
     "kind": "DOM交互逻辑测试，非完整浏览器视觉测试",
     "passed": 17,
     "tests": [
@@ -307,5 +375,10 @@
         "result": "PASS"
       }
     ]
+  },
+  "ifindLiveValidation": {
+    "status": "blocked_no_credentials",
+    "syntheticTestsOnly": true,
+    "note": "iFinD响应测试使用合成数据；未调用真实付费行情，不宣称已连接。"
   }
 }

@@ -9,7 +9,7 @@ await mkdir(path.join(root,'public'),{recursive:true});
 await mkdir(path.join(root,'server'),{recursive:true});
 await writeFile(path.join(root,'data.js'),'window.RESEARCH_DATA = '+serialized+';\n');
 await writeFile(path.join(root,'server/seed.mjs'),'export const seed = '+serialized+';\n');
-for(const name of ['index.html','app.js','guards.js','audit-panels.js','data.js','styles.css','research-data.json','README.md','核查记录.md','AI使用与验证记录.md','测试说明.md','交付前验收清单.md','验收测试结果.json','test-results-v2.json']){
+for(const name of ['index.html','app.js','guards.js','audit-panels.js','market-panel.js','data.js','styles.css','research-data.json','README.md','API接入说明.md','核查记录.md','AI使用与验证记录.md','测试说明.md','交付前验收清单.md','验收测试结果.json','test-results-v2.json']){
  try{await copyFile(path.join(root,name),path.join(root,'public',name));}catch(e){if(e.code!=='ENOENT')throw e;}
 }
 console.log(`Built ${data.companies.length} research samples; copied public files only.`);

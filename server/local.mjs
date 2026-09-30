@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {readFile} from 'node:fs/promises';
 import {handle} from './research.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const staticFiles=new Set(['index.html','app.js','guards.js','audit-panels.js','styles.css','data.js','research-data.json','README.md','核查记录.md','AI使用与验证记录.md','测试说明.md','交付前验收清单.md','验收测试结果.json','test-results-v2.json']);
+const staticFiles=new Set(['index.html','app.js','guards.js','audit-panels.js','market-panel.js','styles.css','data.js','research-data.json','README.md','API接入说明.md','核查记录.md','AI使用与验证记录.md','测试说明.md','交付前验收清单.md','验收测试结果.json','test-results-v2.json']);
 const types={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.md':'text/plain; charset=utf-8'};
 const server=http.createServer(async(req,res)=>{
  try{
