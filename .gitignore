@@ -8,10 +8,11 @@ public/
 test-results/
 research-trial.zip
 *.webm
+demo-artifacts/
 .DS_Store
 
 # Tencent Cloud EdgeOne
 .env
 .edgeone/*
 .tef_dist/*
-  
+

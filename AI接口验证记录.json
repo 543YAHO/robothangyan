@@ -1,0 +1,41 @@
+{
+  "recordedAt": "2026-09-30T14:33:28.642196+08:00",
+  "provider": "Tencent EdgeOne AI Gateway",
+  "model": "@makers/deepseek-v4-flash",
+  "company": "拓普集团",
+  "sourceURL": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225521853.PDF",
+  "sourceSha256": "762f31df5ffde5a346ebf946c17f34d8e3a33777fc43f71d521e5a434ec03416",
+  "result": {
+    "used": true,
+    "status": "validated_excerpts",
+    "message": "模型选取了证据片段，已核验原文包含；需要用户复核业务判断。"
+  },
+  "validatedCandidateCount": 4,
+  "validatedCandidates": [
+    {
+      "page": 12,
+      "stage": "delivery",
+      "excerpt": "报告期内，公司机器人业务取得重要进展：直线执行器、旋转执行器及灵巧手电机已进入小批量交付阶段。"
+    },
+    {
+      "page": 13,
+      "stage": "insufficient",
+      "excerpt": "报告期内，公司热管理技术及产品已在液冷服务器、储能、机器人等新兴领域实现落地，相关业务累计订单增至17.5亿元"
+    },
+    {
+      "page": 16,
+      "stage": "insufficient",
+      "excerpt": "在机器人领域，公司主要产品包括直线执行器、旋转执行器、灵巧手电机及总成、躯体结构件、足部减震器、电子柔性皮肤等。"
+    },
+    {
+      "page": 23,
+      "stage": "statement",
+      "excerpt": "公司拟投资50亿元人民币，规划用地 300亩，在宁波经济技术开发区建设机器人核心部件生产基地。"
+    }
+  ],
+  "limits": [
+    "原文包含校验不等于业务语义完全正确，仍需复核",
+    "在线模型故障时明确回退规则模式",
+    "密钥不进入前端或仓库"
+  ]
+}
