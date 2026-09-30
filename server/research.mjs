@@ -116,7 +116,22 @@ export async function pagesFrom(bytes,type){
 }
 export function validateModelQuotes(items,pages){
  if(!Array.isArray(items))return [];
- return items.slice(0,12).flatMap(item=>{const page=pages.find(p=>p.page===Number(item.page));const excerpt=String(item.excerpt||'').trim();if(!page||excerpt.length<12||excerpt.length>360||outOfScopeAdvice(excerpt)||!compact(page.text).includes(compact(excerpt)))return [];return [{id:'ai-'+item.page+'-'+createHash('sha256').update(excerpt).digest('hex').slice(0,7),page:page.page,excerpt,...classify(excerpt),support:'AI选取片段，已校验原文包含；业务阶段仍待复核'}];});
+ const accepted=[];const rank={revenue:6,delivery:5,validation:4,capability:3.5,research:3,statement:2,insufficient:1};
+ for(const item of items.slice(0,12)){
+  const page=pages.find(p=>p.page===Number(item.page));let excerpt=String(item.excerpt||'').trim();
+  if(!page||excerpt.length<12||excerpt.length>360||outOfScopeAdvice(excerpt))continue;
+  const full=compact(page.text),needle=compact(excerpt),at=full.indexOf(needle);if(at<0)continue;
+  let classification=classify(excerpt);
+  const start=Math.max(0,full.lastIndexOf('。',at)+1,full.lastIndexOf('；',at)+1,at-100);
+  let end=full.indexOf('。',at+needle.length);if(end<0||end-at>250)end=Math.min(full.length,at+needle.length+100);else end++;
+  const context=full.slice(start,end).slice(0,360),contextClassification=classify(context);
+  if(rank[contextClassification.stage]<rank[classification.stage]){classification=contextClassification;excerpt=context;classification={...classification,reason:classification.reason+' 已补充同句限定语，不能截去预计或否定后升档。'};}
+  if(outOfScopeAdvice(excerpt))continue;
+  const id='ai-'+item.page+'-'+createHash('sha256').update(excerpt).digest('hex').slice(0,7);
+  if(accepted.some(x=>x.id===id))continue;
+  accepted.push({id,page:page.page,excerpt,...classification,support:'AI选取片段，已校验原文及有限上下文；业务语义仍需复核'});
+ }
+ return accepted;
 }
 export async function modelExtract(candidates,pages,env){
  env=modelConfig(env);

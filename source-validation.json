@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-09-30",
   "companies": 8,
-  "sourceRecords": 11,
+  "sourceRecords": 13,
   "cachedHashesVerified": [
     "ubtech-results",
     "002050-2026h1",
@@ -15,7 +15,10 @@
     "hds-business"
   ],
   "notLocallyCached": [
-    "tesla-2026q2"
+    "tesla-2026q2",
+    "miit-humanoid-guidance",
+    "miit-guidance-interpretation"
   ],
-  "rule": "没有缓存时不伪造文件指纹。来源与页码并不替代业务语义复核。"
+  "rule": "没有缓存时不伪造文件指纹。来源与页码并不替代业务语义复核。",
+  "datasetVersion": "0.3"
 }

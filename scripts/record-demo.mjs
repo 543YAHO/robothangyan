@@ -19,7 +19,7 @@ try{
  await page.locator('[data-company-open=green]').first().click();await page.locator('#tab-compare').click();await caption('中外比较解释“为什么可比”，同时保留用途、币种、期间和业务组合的限制。');await pause();
  await page.locator('#tab-impact').click();await caption('海外、政策和供需变化落实到公司产品，以及收入、毛利、存货和现金流。缺少供应关系时不判断确定受益。');await pause();await page.locator('#event-select').selectOption('demand-stress');await pause(6000);await page.screenshot({path:path.join(out,'transmission.png'),fullPage:true});
  await page.locator('[data-company=top]').click();await page.locator('#tab-update').click();await caption('手动更新：查询公开报告，提取证据候选，再由使用者复核。');await page.locator('#load-sources').click();await page.locator('#report-select').waitFor({timeout:30000});await page.locator('#analyze-report').click();
- await caption('正在真实读取报告和调用已配置的分析服务。异常时保留旧结论，不制造新进展。');
+ await caption('查询与提取有明确状态；命中缓存会注明复用。异常时保留旧结论，不制造新进展。');
  await page.locator('.candidate').first().waitFor({timeout:50000});await page.screenshot({path:path.join(out,'update.png'),fullPage:true});
  const precise=page.locator('.candidate').filter({hasText:'小批量交付'});const candidate=await precise.count()?precise.first():page.locator('.candidate').first();await candidate.locator('input').check();await page.locator('#review-confirm').check();await page.locator('#apply-update').click();
  await page.locator('[data-view=history]').click();await caption('确认后保存个人研究版本。新旧来源和判断可复核、导出，也能恢复基线。');await pause(10000);await page.screenshot({path:path.join(out,'history.png'),fullPage:true});
