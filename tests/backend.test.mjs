@@ -1,0 +1,24 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {classify,extractCandidates,validateModelQuotes,safeSourceURL,handle} from '../server/research.mjs';
+
+test('明确人形收入措辞可识别，仍保留口径待核',()=>{const x=classify('公司在报告期内实现人形机器人产品收入500万元。');assert.equal(x.stage,'revenue');assert.equal(x.scope,'明确');});
+test('广义机器人收入不自动变成人形收入',()=>assert.notEqual(classify('公司实现工业机器人产品收入500万元。').stage,'revenue'));
+test('前瞻产量和收入不能当作已实现',()=>assert.equal(classify('公司预计明年实现人形机器人收入1亿元。').stage,'statement'));
+test('产能与供货能力不当作交付',()=>assert.equal(classify('公司具备人形机器人批量供货能力。').stage,'capability'));
+test('已进入小批量交付可识别',()=>assert.equal(classify('公司人形机器人直线执行器已进入小批量交付阶段。').stage,'delivery'));
+test('送样不等于量产',()=>assert.equal(classify('公司已向人形机器人客户送样。').stage,'validation'));
+test('原始样机属于研发',()=>assert.equal(classify('公司人形机器人项目已完成原始样机开发。').stage,'research'));
+test('仅关注方向是表态',()=>assert.equal(classify('公司正在关注人形机器人领域。').stage,'statement'));
+test('明确否认或未实现收入不会被关键词升档',()=>assert.equal(classify('公司尚未实现人形机器人收入。').stage,'insufficient'));
+test('仿生用途保留差异',()=>assert.equal(classify('公司仿生机器人执行器正在客户验证。').scope,'人形用途待核实'));
+test('稀疏文本保留无法确认',()=>assert.equal(classify('市场将公司纳入概念名单。').stage,'insufficient'));
+test('分离中文字符的PDF文字可定位',()=>assert.ok(extractCandidates([{page:3,text:'公司人 形 机 器 人产品已进入小批量交付。'}]).length));
+test('没有关键词不能推断无业务',()=>assert.deepEqual(extractCandidates([{page:1,text:'公司发布定期报告。'}]),[]));
+test('模型编造的摘录与错误页码被拒绝',()=>{const pages=[{page:2,text:'公司人形机器人产品目前处于客户送样验证阶段。'}];assert.equal(validateModelQuotes([{page:2,excerpt:'公司人形机器人产品实现收入一百亿元。'}],pages).length,0);assert.equal(validateModelQuotes([{page:9,excerpt:pages[0].text}],pages).length,0);assert.equal(validateModelQuotes([{page:2,excerpt:pages[0].text}],pages).length,1);});
+test('来源白名单阻止任意URL与本地地址',()=>{for(const x of ['http://127.0.0.1/','https://evil.example/a.pdf','file:///etc/passwd','https://user@static.cninfo.com.cn/a.pdf'])assert.throws(()=>safeSourceURL(x));assert.match(safeSourceURL('https://static.cninfo.com.cn/a.pdf'),/^https:/);});
+test('未接模型时如实报告规则模式',async()=>{const r=await handle(new Request('http://localhost/api/status'));const j=await r.json();assert.equal(j.mode,'rules_only');assert.equal(j.dataProviders.ifind,false);assert.equal(j.dataProviders.fuyao,false);});
+test('非法JSON返回400而非改写结果',async()=>{const r=await handle(new Request('http://localhost/api/analyze',{method:'POST',body:'not-json'}));assert.equal(r.status,400);});
+test('跨站写操作被拒绝',async()=>{const r=await handle(new Request('http://localhost/api/analyze',{method:'POST',headers:{Origin:'https://other.example'},body:'{}'}));assert.equal(r.status,403);});
+test('未知公司和接口返回404',async()=>{assert.equal((await handle(new Request('http://localhost/api/announcements?company=unknown'))).status,404);assert.equal((await handle(new Request('http://localhost/api/unknown'))).status,404);});
+test('超长请求被拒绝',async()=>{const r=await handle(new Request('http://localhost/api/analyze',{method:'POST',body:'a'.repeat(5000)}));assert.equal(r.status,413);});

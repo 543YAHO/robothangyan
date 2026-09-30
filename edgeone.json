@@ -1,0 +1,6 @@
+{
+  "name":"robot-evidence-research",
+  "buildCommand":"node scripts/build.mjs",
+  "installCommand":"pnpm install --ignore-scripts",
+  "outputDirectory":"public"
+}

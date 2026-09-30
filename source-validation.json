@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-09-30",
+  "companies": 8,
+  "sourceRecords": 11,
+  "cachedHashesVerified": [
+    "ubtech-results",
+    "002050-2026h1",
+    "002050-2025fy",
+    "601689-2026h1",
+    "688017-2026h1",
+    "688017-2025fy",
+    "603728-2026h1",
+    "002896-2025fy",
+    "002896-2026h1",
+    "hds-business"
+  ],
+  "notLocallyCached": [
+    "tesla-2026q2"
+  ],
+  "rule": "没有缓存时不伪造文件指纹。来源与页码并不替代业务语义复核。"
+}

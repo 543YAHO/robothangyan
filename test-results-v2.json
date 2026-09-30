@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-09-30T05:45:27.368Z",
+  "kind": "DOM交互逻辑测试，非完整浏览器视觉测试",
+  "passed": 12,
+  "tests": [
+    {
+      "name": "八家公司和来源正确加载",
+      "result": "PASS"
+    },
+    {
+      "name": "搜索与无匹配恢复",
+      "result": "PASS"
+    },
+    {
+      "name": "严格用途筛选",
+      "result": "PASS"
+    },
+    {
+      "name": "中日产品对照与不可比限制",
+      "result": "PASS"
+    },
+    {
+      "name": "产业链层级、热门数据缺失状态与公司导航",
+      "result": "PASS"
+    },
+    {
+      "name": "真实事件与财务传导断点",
+      "result": "PASS"
+    },
+    {
+      "name": "情景空值、越界和公式",
+      "result": "PASS"
+    },
+    {
+      "name": "手动查询→提取→确认前禁止保存",
+      "result": "PASS"
+    },
+    {
+      "name": "补充弱证据不降级，保存来源与版本",
+      "result": "PASS"
+    },
+    {
+      "name": "刷新恢复本机版本并可恢复公开基线",
+      "result": "PASS"
+    },
+    {
+      "name": "服务失败保留原结论并展示错误",
+      "result": "PASS"
+    },
+    {
+      "name": "数据加载失败明确提示",
+      "result": "PASS"
+    }
+  ]
+}
