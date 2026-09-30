@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-09-30T09:52:48.697540+00:00",
+  "deploymentId": "dp36lj5qs8vx",
+  "deploymentRevision": "6be4e88",
+  "providersStatus": 200,
+  "providerState": "not_configured",
+  "statusHTTP": 200,
+  "quotesHTTP": 503,
+  "quotesCode": "IFIND_NOT_CONFIGURED",
+  "envHTTP": 404,
+  "realIfindRequestMade": false,
+  "mainlandIndependentNetworkVerified": false
+}
