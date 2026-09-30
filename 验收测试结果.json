@@ -1,0 +1,304 @@
+{
+  "checkedAt": "2026-09-30T08:41:14.861776+00:00",
+  "backendDataFaultCompliance": {
+    "passed": 55,
+    "cases": [
+      {
+        "name": "概念板块或ETF成员不能建立业务关系",
+        "result": "PASS"
+      },
+      {
+        "name": "已交付但未确认收入仍保留交付事实",
+        "result": "PASS"
+      },
+      {
+        "name": "已有订单和未来计划分开，不被未来词整体降档",
+        "result": "PASS"
+      },
+      {
+        "name": "多行业混合收入不能冒充人形收入",
+        "result": "PASS"
+      },
+      {
+        "name": "行业市场规模不属于公司收入",
+        "result": "PASS"
+      },
+      {
+        "name": "英文未形成收入不被误升为收入",
+        "result": "PASS"
+      },
+      {
+        "name": "明确否认与未检索到证据分别记录",
+        "result": "PASS"
+      },
+      {
+        "name": "元数据关联完整：产品节点、公司、来源与页码",
+        "result": "PASS"
+      },
+      {
+        "name": "关键数字有来源、期间、单位与精确换算",
+        "result": "PASS"
+      },
+      {
+        "name": "未知人形收入保留null；广义机器人增速保留范围",
+        "result": "PASS"
+      },
+      {
+        "name": "至少两组跨市场对照并明确不可比部分",
+        "result": "PASS"
+      },
+      {
+        "name": "海外、政策、供需均落到公司产品及财务，不止行业受益",
+        "result": "PASS"
+      },
+      {
+        "name": "不把供应关系未知变成确定受益",
+        "result": "PASS"
+      },
+      {
+        "name": "HTTP 429与5xx明确失败，不包装成无业务",
+        "result": "PASS"
+      },
+      {
+        "name": "源站超时返回可辨识错误并保留旧结论语义",
+        "result": "PASS"
+      },
+      {
+        "name": "流式下载中断不会产出半份证据",
+        "result": "PASS"
+      },
+      {
+        "name": "超过下载上限直接拒绝",
+        "result": "PASS"
+      },
+      {
+        "name": "重定向到非官方地址不继续请求",
+        "result": "PASS"
+      },
+      {
+        "name": "公告接口损坏JSON与字段变化返回明确错误",
+        "result": "PASS"
+      },
+      {
+        "name": "混入其他股票公告时不建立错误公司归属",
+        "result": "PASS"
+      },
+      {
+        "name": "无关内容或访问拒绝不能伪装成证据",
+        "result": "PASS"
+      },
+      {
+        "name": "模型429、5xx和超时明确降级，不泄露密钥",
+        "result": "PASS"
+      },
+      {
+        "name": "模型错误JSON、虚构金额或错误页码被拒绝",
+        "result": "PASS"
+      },
+      {
+        "name": "模型无法用自己给的等级覆盖原文，只能返回可核查引用",
+        "result": "PASS"
+      },
+      {
+        "name": "客户端拒绝跨公司、缺失哈希、越界页码和空字段",
+        "result": "PASS"
+      },
+      {
+        "name": "本机历史损坏时不能改写公共基线",
+        "result": "PASS"
+      },
+      {
+        "name": "跨代理合法同源被接受，其他来源仍拒绝",
+        "result": "PASS"
+      },
+      {
+        "name": "仅配置模型不能声称调用已成功，公开状态不泄露密钥",
+        "result": "PASS"
+      },
+      {
+        "name": "没有任意投顾或交易接口，免责声明在页面和方法中",
+        "result": "PASS"
+      },
+      {
+        "name": "可解析但没有文字的PDF不能判成没有业务",
+        "result": "PASS"
+      },
+      {
+        "name": "损坏PDF返回解析失败，PDF地址回登录HTML时拒绝",
+        "result": "PASS"
+      },
+      {
+        "name": "端到端模型失败返回有出处的规则候选，不改写公开数据",
+        "result": "PASS"
+      },
+      {
+        "name": "投资合同和框架协议不冒充销售订单",
+        "result": "PASS"
+      },
+      {
+        "name": "原文里的买卖建议或提示注入也不作为业务证据采纳",
+        "result": "PASS"
+      },
+      {
+        "name": "研发口号不等于具体研发项目；独立收入证据不因概念标签被忽略",
+        "result": "PASS"
+      },
+      {
+        "name": "明确人形收入措辞可识别，仍保留口径待核",
+        "result": "PASS"
+      },
+      {
+        "name": "广义机器人收入不自动变成人形收入",
+        "result": "PASS"
+      },
+      {
+        "name": "前瞻产量和收入不能当作已实现",
+        "result": "PASS"
+      },
+      {
+        "name": "产能与供货能力不当作交付",
+        "result": "PASS"
+      },
+      {
+        "name": "已进入小批量交付可识别",
+        "result": "PASS"
+      },
+      {
+        "name": "送样不等于量产",
+        "result": "PASS"
+      },
+      {
+        "name": "原始样机属于研发",
+        "result": "PASS"
+      },
+      {
+        "name": "仅关注方向是表态",
+        "result": "PASS"
+      },
+      {
+        "name": "明确否认或未实现收入不会被关键词升档",
+        "result": "PASS"
+      },
+      {
+        "name": "仿生用途保留差异",
+        "result": "PASS"
+      },
+      {
+        "name": "稀疏文本保留无法确认",
+        "result": "PASS"
+      },
+      {
+        "name": "分离中文字符的PDF文字可定位",
+        "result": "PASS"
+      },
+      {
+        "name": "没有关键词不能推断无业务",
+        "result": "PASS"
+      },
+      {
+        "name": "模型编造的摘录与错误页码被拒绝",
+        "result": "PASS"
+      },
+      {
+        "name": "来源白名单阻止任意URL与本地地址",
+        "result": "PASS"
+      },
+      {
+        "name": "未接模型时如实报告规则模式",
+        "result": "PASS"
+      },
+      {
+        "name": "非法JSON返回400而非改写结果",
+        "result": "PASS"
+      },
+      {
+        "name": "跨站写操作被拒绝",
+        "result": "PASS"
+      },
+      {
+        "name": "未知公司和接口返回404",
+        "result": "PASS"
+      },
+      {
+        "name": "超长请求被拒绝",
+        "result": "PASS"
+      }
+    ]
+  },
+  "dom": {
+    "checkedAt": "2026-09-30T08:41:14.573Z",
+    "kind": "DOM交互逻辑测试，非完整浏览器视觉测试",
+    "passed": 17,
+    "tests": [
+      {
+        "name": "八家公司和来源正确加载",
+        "result": "PASS"
+      },
+      {
+        "name": "搜索与无匹配恢复",
+        "result": "PASS"
+      },
+      {
+        "name": "严格用途筛选",
+        "result": "PASS"
+      },
+      {
+        "name": "中日产品对照与不可比限制",
+        "result": "PASS"
+      },
+      {
+        "name": "产业链层级、热门数据缺失状态与公司导航",
+        "result": "PASS"
+      },
+      {
+        "name": "真实事件与财务传导断点",
+        "result": "PASS"
+      },
+      {
+        "name": "情景空值、越界和公式",
+        "result": "PASS"
+      },
+      {
+        "name": "手动查询→提取→确认前禁止保存",
+        "result": "PASS"
+      },
+      {
+        "name": "补充弱证据不降级，保存来源与版本",
+        "result": "PASS"
+      },
+      {
+        "name": "刷新恢复本机版本并可恢复公开基线",
+        "result": "PASS"
+      },
+      {
+        "name": "服务失败保留原结论并展示错误",
+        "result": "PASS"
+      },
+      {
+        "name": "数据加载失败明确提示",
+        "result": "PASS"
+      },
+      {
+        "name": "AI职责、禁止推断、未做事项与免责声明可见",
+        "result": "PASS"
+      },
+      {
+        "name": "关键数字展示原数、单位、报告期与原文链接",
+        "result": "PASS"
+      },
+      {
+        "name": "三个外部变化各有公司财务路径，假设不冒充新闻",
+        "result": "PASS"
+      },
+      {
+        "name": "服务返回字段不完整时禁止采纳且保留旧结论",
+        "result": "PASS"
+      },
+      {
+        "name": "本地存储失败不能显示保存成功",
+        "result": "PASS"
+      }
+    ]
+  },
+  "browser": "新验收版部署后进行实际浏览器录制和截图检查，另记录结果。"
+}

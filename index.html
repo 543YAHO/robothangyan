@@ -7,20 +7,23 @@
 </head>
 <body>
 <header><div class="bar"><div class="brand"><span>◈</span> 机器人实证 <span class="meta">／ EVIDENCE FIRST</span></div><span class="pill">公开证据 · 手动更新</span></div></header>
-<nav class="globalnav" aria-label="主要功能"><button data-view="companies" aria-pressed="true">公司核查</button><button data-view="industry" aria-pressed="false">行业与公司发现</button><button data-view="history" aria-pressed="false">更新记录</button><span id="service-state" class="meta" role="status">正在连接更新服务</span></nav>
-<div id="fatal" hidden role="alert">研究数据暂时无法读取。请确认 data.js 与本页面位于同一目录，再重新打开。当前不会展示无依据的公司分级。</div>
+<nav class="globalnav" aria-label="主要功能"><button data-view="companies" aria-pressed="true">公司核查</button><button data-view="industry" aria-pressed="false">行业与公司发现</button><button data-view="history" aria-pressed="false">更新记录</button><button data-view="methods" aria-pressed="false">方法与边界</button><span id="service-state" class="meta" role="status">正在连接更新服务</span></nav>
+<div id="fatal" hidden role="alert">研究资料或核验组件暂未加载，当前不生成分级。请刷新重试。</div>
 <main class="wrap" id="app" hidden>
 <div class="intro"><div><div class="eyebrow">从公司出发，追溯每个判断</div><h1>概念背后，有多少业务证据？</h1><p>先看做到哪一步，再看证据能证明什么。商业化阶段、应用口径与未知项分别展示。</p></div><div class="count"><strong id="sample-count">8</strong> 家样本<br>2026-09-30 核查</div></div>
 <div class="notice">本轮主要核查2026年半年报及2025年年报，未穷尽后续公告。当前展示研究样本；行情暂不可用，未生成热门排名。</div>
 <div id="global-message" class="meta" role="status"></div>
 <section id="industry-view" class="panel" hidden></section>
 <section id="history-view" class="panel" hidden></section>
+<section id="methods-view" class="panel" hidden></section>
 <section id="company-view"><div class="controls"><input class="search" id="search" type="search" aria-label="搜索公司、代码或产品" placeholder="搜索公司、代码或产品，如：拓普、TSLA、减速器"><select id="sector" aria-label="筛选产业链环节"><option value="all">全部产业链环节</option></select><select id="scope" aria-label="筛选人形用途范围"><option value="all">保留关联候选</option><option value="explicit">仅明确人形用途</option></select></div>
 <div class="layout"><aside class="rail"><div class="meta" id="result-count" aria-live="polite"></div><div class="list" id="list"></div><details><summary>分级规则</summary><p>收入 → 订单／交付 → 客户验证 → 具体研发 → 仅表态 → 证据不足。只能依据对应产品的事实归档；不能确定时保留待核状态。</p><p>本轮没有为了凑齐六档，强行把任何样本判为“仅表态”。权威来源中的预测仍然是预测。</p><p>市场热度、代表性与商业化程度分别处理。本列表按研究样本顺序展示。</p></details></aside><section class="panel" id="detail" aria-label="公司证据详情"></section></div>
 </section>
-<div class="footer">研究辅助，不输出买卖建议。未披露 ≠ 0；未检索到 ≠ 不存在；具备产能 ≠ 已经交付。<br><a href="核查记录.md">完整核查记录</a> · <a href="research-data.json">结构化证据数据</a> · <a href="README.md">范围与运行说明</a> · <a href="测试说明.md">测试说明</a></div>
+<div class="footer"><strong>本产品仅供研究参考，不构成投资建议。</strong> 不提供买卖建议或收益保证。未披露 ≠ 0；未检索到 ≠ 不存在；具备产能 ≠ 已经交付。<br><a href="核查记录.md">完整核查记录</a> · <a href="research-data.json">结构化证据数据</a> · <a href="README.md">范围与运行说明</a> · <a href="测试说明.md">测试说明</a></div>
 </main>
 <script src="data.js"></script>
+<script src="guards.js"></script>
+<script src="audit-panels.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

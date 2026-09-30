@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "checkedAt": "2026-09-30",
   "reportingPeriod": "主要为2026H1；部分具体项目证据来自2025年年报",
   "coverage": "本轮为选定报告试查，不代表穷尽截至核查日的所有公告、互动回复或客户材料。",
@@ -118,6 +118,25 @@
       "pages": [],
       "url": "https://www.hds.co.jp/english/company/business/",
       "sha256": "0a260784d1ef24e0d92d40ca27df6eb1c54836ca8a55c1576494edaa5b0e5ac1"
+    },
+    "miit-humanoid-guidance": {
+      "id": "miit-humanoid-guidance",
+      "title": "工业和信息化部关于印发《人形机器人创新发展指导意见》的通知",
+      "published": "2023-11-02",
+      "issued": "2023-10-20",
+      "pages": [],
+      "url": "https://www.miit.gov.cn/jgsj/kjs/wjfb/art/2023/art_50316f76a9b1454b898c7bb2a5846b79.html",
+      "sha256": null,
+      "note": "政策历史案例；不是最新政策综述。"
+    },
+    "miit-guidance-interpretation": {
+      "id": "miit-guidance-interpretation",
+      "title": "工业和信息化部科技司：《人形机器人创新发展指导意见》解读",
+      "published": "2023-11-02",
+      "pages": [],
+      "url": "https://www.miit.gov.cn/jgsj/kjs/gzdt/art/2023/art_7f54847cabfa4ed28f472a15a27f2965.html",
+      "sha256": null,
+      "note": "官方解读，用于定位政策任务；在线查阅，未伪造缓存指纹。"
     }
   },
   "companies": [
@@ -146,7 +165,12 @@
         "currency": "CNY",
         "period": "2026H1",
         "scope": "全尺寸具身智能人形机器人产品及服务",
-        "share": 46.5
+        "share": 46.5,
+        "source": "ubtech-results",
+        "page": 3,
+        "reportedValue": 590299,
+        "reportedUnit": "千元人民币",
+        "multiplier": 1000
       },
       "evidence": [
         {
@@ -170,7 +194,43 @@
           "basis": "根据所列产品功能归类，应用口径限制单独保留。"
         }
       ],
-      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。"
+      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。",
+      "metrics": [
+        {
+          "id": "humanoid-revenue",
+          "name": "全尺寸具身智能人形机器人产品及服务收入",
+          "reportedValue": 590299,
+          "reportedUnit": "千元人民币",
+          "value": 590299000,
+          "unit": "元人民币",
+          "multiplier": 1000,
+          "period": "2026H1",
+          "source": "ubtech-results",
+          "page": 3,
+          "locator": "Revenue by Type of Products and Services",
+          "scope": "全尺寸具身智能人形机器人产品及服务，包含产品及服务",
+          "qualification": "不是集团全部收入；不得把集团毛利率当作该业务毛利率。"
+        },
+        {
+          "id": "humanoid-share",
+          "name": "该业务占集团收入比例",
+          "reportedValue": 46.5,
+          "reportedUnit": "%",
+          "value": 46.5,
+          "unit": "%",
+          "multiplier": 1,
+          "period": "2026H1",
+          "source": "ubtech-results",
+          "page": 3,
+          "locator": "% of Total Revenue",
+          "scope": "同一业务分类及报告期",
+          "qualification": "收入分类调整后，跨期比较需使用一致口径。"
+        }
+      ],
+      "evidenceAssessment": {
+        "support": "直接支持所列阶段",
+        "basis": "仅评价当前主张与原文的对应程度。公司单方披露不等于独立审计，也不证明所有产品已商业化。"
+      }
     },
     {
       "id": "top",
@@ -222,7 +282,12 @@
           "basis": "根据所列产品功能归类，应用口径限制单独保留。"
         }
       ],
-      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。"
+      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。",
+      "metrics": [],
+      "evidenceAssessment": {
+        "support": "直接支持部分产品交付；客户与用途需细化",
+        "basis": "仅评价当前主张与原文的对应程度。公司单方披露不等于独立审计，也不证明所有产品已商业化。"
+      }
     },
     {
       "id": "sanhua",
@@ -273,7 +338,12 @@
           "basis": "根据所列产品功能归类，应用口径限制单独保留。"
         }
       ],
-      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。"
+      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。",
+      "metrics": [],
+      "evidenceAssessment": {
+        "support": "部分支持；人形用途或范围待核",
+        "basis": "仅评价当前主张与原文的对应程度。公司单方披露不等于独立审计，也不证明所有产品已商业化。"
+      }
     },
     {
       "id": "green",
@@ -324,7 +394,12 @@
           "basis": "根据所列产品功能归类，应用口径限制单独保留。"
         }
       ],
-      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。"
+      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。",
+      "metrics": [],
+      "evidenceAssessment": {
+        "support": "部分支持；人形用途或范围待核",
+        "basis": "仅评价当前主张与原文的对应程度。公司单方披露不等于独立审计，也不证明所有产品已商业化。"
+      }
     },
     {
       "id": "moons",
@@ -376,7 +451,29 @@
           "basis": "根据所列产品功能归类，应用口径限制单独保留。"
         }
       ],
-      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。"
+      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。",
+      "metrics": [
+        {
+          "id": "robot-revenue-growth",
+          "name": "机器人应用领域收入同比增速",
+          "reportedValue": 58,
+          "reportedUnit": "%",
+          "value": 58,
+          "unit": "%",
+          "multiplier": 1,
+          "approximate": true,
+          "period": "2026H1",
+          "source": "603728-2026h1",
+          "page": 19,
+          "locator": "控制电机及其驱动系统业务在机器人应用领域",
+          "scope": "广义机器人应用领域，不是人形机器人单独口径",
+          "qualification": "不得改写成人形机器人收入增速，也不能由此倒算人形收入。"
+        }
+      ],
+      "evidenceAssessment": {
+        "support": "直接支持供货能力；不支持已实际交付",
+        "basis": "仅评价当前主张与原文的对应程度。公司单方披露不等于独立审计，也不证明所有产品已商业化。"
+      }
     },
     {
       "id": "zhongda",
@@ -435,7 +532,12 @@
           "basis": "根据所列产品功能归类，应用口径限制单独保留。"
         }
       ],
-      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。"
+      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。",
+      "metrics": [],
+      "evidenceAssessment": {
+        "support": "直接支持历史研发活动；当前进度待补证",
+        "basis": "仅评价当前主张与原文的对应程度。公司单方披露不等于独立审计，也不证明所有产品已商业化。"
+      }
     },
     {
       "id": "tesla",
@@ -479,7 +581,12 @@
           "basis": "根据所列产品功能归类，应用口径限制单独保留。"
         }
       ],
-      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。"
+      "representativeReason": "用以检验该环节的业务阶段与证据口径；不代表投资推荐或热度排名。",
+      "metrics": [],
+      "evidenceAssessment": {
+        "support": "直接支持所列阶段",
+        "basis": "仅评价当前主张与原文的对应程度。公司单方披露不等于独立审计，也不证明所有产品已商业化。"
+      }
     },
     {
       "id": "hds",
@@ -523,7 +630,12 @@
           "basis": "官方术语strain wave gearing支持谐波传动产品归属。"
         }
       ],
-      "representativeReason": "海外精密传动产品对照；不表示已确认其人形收入。"
+      "representativeReason": "海外精密传动产品对照；不表示已确认其人形收入。",
+      "metrics": [],
+      "evidenceAssessment": {
+        "support": "部分支持；人形用途或范围待核",
+        "basis": "仅评价当前主张与原文的对应程度。公司单方披露不等于独立审计，也不证明所有产品已商业化。"
+      }
     }
   ],
   "rules": [
@@ -630,7 +742,7 @@
         {
           "name": "不可直接比较",
           "values": {
-            "ubtech": "集团毛利率、集团估值及其他业务",
+            "ubtech": "集团毛利率和估值不能当作人形业务专属指标",
             "tesla": "汽车、能源财务不能代表Optimus"
           }
         },
@@ -641,7 +753,8 @@
             "tesla": "实际外部交付与项目收入"
           }
         }
-      ]
+      ],
+      "limitations": "本轮未做币种换算后的估值模型，也未声称所有产品型号可直接比较。比较表引用基线证据，不随个人标注自动重算。"
     },
     {
       "id": "precision-drive",
@@ -684,7 +797,7 @@
           "name": "不可直接比较",
           "values": {
             "green": "集团收入当作人形收入；不同型号参数混比",
-            "hds": "币种、期间及产品组合未对齐的财务比率"
+            "hds": "金额需统一币种和期间；利润率需统一业务与会计口径"
           }
         },
         {
@@ -694,7 +807,8 @@
             "hds": "对应型号、应用分项与同期财务"
           }
         }
-      ]
+      ],
+      "limitations": "本轮未做币种换算后的估值模型，也未声称所有产品型号可直接比较。比较表引用基线证据，不随个人标注自动重算。"
     }
   ],
   "events": [
@@ -754,6 +868,991 @@
           "path": "存货、应收账款与回款节奏",
           "unknown": "账期、预付款和备货要求"
         }
+      ],
+      "category": "海外",
+      "type": "observed",
+      "companyPaths": [
+        {
+          "companyId": "ubtech",
+          "firstHit": "整机应用与客户采购",
+          "business": "全尺寸人形机器人产品及服务",
+          "relationshipGate": "这是整机竞争与应用需求参照，不是上游供应关系。实际订单、产品定位和客户验收需要分别核实。",
+          "basis": [
+            {
+              "source": "ubtech-results",
+              "page": 3
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "该业务营业收入",
+              "direction": "条件性增减",
+              "mechanism": "客户采购→交付验收→收入确认",
+              "unknown": "实际订单、价格、验收及产品/服务拆分"
+            },
+            {
+              "indicator": "该业务毛利与研发费用",
+              "direction": "不确定",
+              "mechanism": "竞争可能压低售价，也可能推动产品迭代和研发投入",
+              "unknown": "分项成本、研发投入和价格"
+            },
+            {
+              "indicator": "经营现金流与应收账款",
+              "direction": "可能滞后",
+              "mechanism": "回款速度与合同账期可能滞后于收入",
+              "unknown": "回款、账期及客户结构"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "top",
+          "firstHit": "关节执行器及灵巧手电机需求",
+          "business": "直线执行器、旋转执行器、灵巧手电机",
+          "relationshipGate": "半年报支持部分产品小批量交付，但没有据此确认Optimus客户关系、对应机型或份额。该断点未补齐前不能判断确定受益。",
+          "basis": [
+            {
+              "source": "601689-2026h1",
+              "page": 12
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "相关产品营业收入",
+              "direction": "条件性增加",
+              "mechanism": "机型采购→本公司有效订单→交付验收→收入",
+              "unknown": "客户、对应产品价格、份额、数量、验收时间"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "不确定",
+              "mechanism": "降价压力与良率、产能利用率、折旧摊薄同时作用",
+              "unknown": "产品级成本、良率、价格和产能利用率"
+            },
+            {
+              "indicator": "存货、应收与经营现金流",
+              "direction": "可能阶段承压",
+              "mechanism": "备货和交付可能先于回款",
+              "unknown": "订单可执行性、库存及客户账期"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "sanhua",
+          "firstHit": "执行器研发、客户验证与潜在定点",
+          "business": "仿生机器人机电执行器",
+          "relationshipGate": "原文是仿生机器人口径；人形用途、客户、验证结果与商业订单都需补证。",
+          "basis": [
+            {
+              "source": "002050-2026h1",
+              "page": 11
+            },
+            {
+              "source": "002050-2025fy",
+              "page": 28
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用",
+              "direction": "可能先变化",
+              "mechanism": "客户方案迭代和验证影响研发投入",
+              "unknown": "项目投入与费用归属"
+            },
+            {
+              "indicator": "资本开支／折旧",
+              "direction": "条件性变化",
+              "mechanism": "若扩大产业化能力，投入可能先于收入",
+              "unknown": "产线用途、设备投入及投产时间"
+            },
+            {
+              "indicator": "相关产品收入",
+              "direction": "尚不能量化",
+              "mechanism": "完成验证后还需有效订单、交付及验收",
+              "unknown": "人形用途、客户订单、价格与交付"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "green",
+          "firstHit": "谐波传动方案、规格与验证需求",
+          "business": "谐波减速器及相关关节部件",
+          "relationshipGate": "必须先确认机型采用相应传动方案，并确认本公司的供应资格。具身与工业机器人总量不能直接算成人形需求。",
+          "basis": [
+            {
+              "source": "688017-2026h1",
+              "page": 11
+            },
+            {
+              "source": "688017-2025fy",
+              "page": 19
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "相关减速器收入",
+              "direction": "条件性增减",
+              "mechanism": "方案采用→供货资格→订单→交付",
+              "unknown": "人形用途、型号、单机用量与份额"
+            },
+            {
+              "indicator": "产能利用率／毛利率",
+              "direction": "不确定",
+              "mechanism": "订单增长可能摊薄成本，降价或爬坡也可能侵蚀毛利",
+              "unknown": "售价、良率与对应产线利用率"
+            },
+            {
+              "indicator": "存货与经营现金流",
+              "direction": "可能阶段承压",
+              "mechanism": "备料、生产及回款之间存在时差",
+              "unknown": "备货和订单匹配、账期"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "moons",
+          "firstHit": "电机、驱动与关节模组的设计选型",
+          "business": "无框／空心杯电机、驱动与一体化关节模组",
+          "relationshipGate": "披露的是供货能力；实际人形订单、机型供应关系及收入仍需核实。机器人应用收入增速不能代替人形增速。",
+          "basis": [
+            {
+              "source": "603728-2026h1",
+              "page": 19
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "人形相关产品收入",
+              "direction": "尚不能量化",
+              "mechanism": "设计导入→实际订单→出货验收",
+              "unknown": "具体机型、产品、份额与收入拆分"
+            },
+            {
+              "indicator": "产品毛利率",
+              "direction": "不确定",
+              "mechanism": "集成度和售价提升与成本、良率、议价共同作用",
+              "unknown": "产品级收入与成本"
+            },
+            {
+              "indicator": "库存及经营现金流",
+              "direction": "条件性变化",
+              "mechanism": "备货先于交付与回款可能占用现金",
+              "unknown": "订单兑现、库存与账期"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "zhongda",
+          "firstHit": "关节与减速器的研发和客户验证",
+          "business": "人形机器人关节减速器及一体化关节项目",
+          "relationshipGate": "具体项目证据来自年报研发披露；客户名单不能证明对应人形机型订单。先补当前研发及验证进度。",
+          "basis": [
+            {
+              "source": "002896-2025fy",
+              "page": 24
+            },
+            {
+              "source": "002896-2026h1",
+              "page": 9
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用",
+              "direction": "可能先变化",
+              "mechanism": "样机迭代和验证影响投入",
+              "unknown": "项目进度、投入金额"
+            },
+            {
+              "indicator": "资本开支／存货",
+              "direction": "取决于是否进入试制或备货",
+              "mechanism": "从研发到试制需要新证据支持",
+              "unknown": "试制、订单及备货信息"
+            },
+            {
+              "indicator": "人形业务收入",
+              "direction": "尚不能量化",
+              "mechanism": "需验证、订单和实际交付证据逐步衔接",
+              "unknown": "当前阶段、产品、客户与收入拆分"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "tesla",
+          "firstHit": "整机研发与制造准备",
+          "business": "Optimus研发及生产准备",
+          "relationshipGate": "事件主体自身的生产准备可作为观察点；披露日不等于费用发生日，产能目标不等于销量。",
+          "basis": [
+            {
+              "source": "tesla-2026q2",
+              "page": null
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用／资本开支",
+              "direction": "可能先发生",
+              "mechanism": "研发及制造准备可能先于商业收入",
+              "unknown": "Optimus项目的投入金额与归属期间"
+            },
+            {
+              "indicator": "Optimus收入",
+              "direction": "尚不能量化",
+              "mechanism": "需外部商业交付与收入披露",
+              "unknown": "客户、交付和单列收入"
+            },
+            {
+              "indicator": "现金流",
+              "direction": "方向未定",
+              "mechanism": "研发、设备与备货支出取决于真实执行节奏",
+              "unknown": "项目现金支出及回款"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "hds",
+          "firstHit": "精密传动技术路线与潜在产品适配",
+          "business": "HarmonicDrive®精密传动及运动控制产品",
+          "relationshipGate": "官网只支持产品层面对照。本轮未确认特定人形项目、客户或收入，不能列为确定受益公司。",
+          "basis": [
+            {
+              "source": "hds-business",
+              "page": null
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "对应产品收入",
+              "direction": "尚不能量化",
+              "mechanism": "产品适配→客户验证→商业订单",
+              "unknown": "人形用途、型号、客户与分项销售"
+            },
+            {
+              "indicator": "研发费用／毛利",
+              "direction": "方向未定",
+              "mechanism": "定制开发与订单规模可能影响投入及单位成本",
+              "unknown": "项目投入、产品售价及成本"
+            },
+            {
+              "indicator": "营运资金",
+              "direction": "条件性变化",
+              "mechanism": "订单形成后的备货和回款可能改变占用",
+              "unknown": "实际订单、库存和账期"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        }
+      ]
+    },
+    {
+      "id": "policy-guidance",
+      "category": "政策",
+      "type": "observed",
+      "date": "2023-11-02",
+      "title": "人形机器人创新发展指导意见（历史政策案例）",
+      "source": "miit-guidance-interpretation",
+      "locator": "科技司同日官方解读：主要任务、重点产品、应用场景与保障措施",
+      "fact": "政策提出关键技术与产品攻关、应用场景和产业生态等任务。本案例分析政策方向可能如何传导，不代表任何样本已获得采购或补助。",
+      "steps": [
+        {
+          "title": "政策原文",
+          "kind": "事实",
+          "detail": "阅读政策任务、适用范围与日期。此处为2023年历史案例。"
+        },
+        {
+          "title": "技术攻关及应用安排",
+          "kind": "分析假设",
+          "detail": "政策方向可能影响研发与示范需求，具体落实仍需项目与采购信息。"
+        },
+        {
+          "title": "公司参与资格与产品",
+          "kind": "必须补证",
+          "detail": "核实公司产品是否匹配、是否参与具体项目、是否实际获单或获批。"
+        },
+        {
+          "title": "投入、交付与财务",
+          "kind": "条件传导",
+          "detail": "研发与设备投入可能先于收入，订单、补助和回款均须另有依据。"
+        }
+      ],
+      "companyPaths": [
+        {
+          "companyId": "ubtech",
+          "firstHit": "技术攻关与示范应用安排 → 整机应用与客户采购",
+          "business": "全尺寸人形机器人产品及服务",
+          "relationshipGate": "政策支持不等于该公司获单或补助。先确认具体项目、采购/补助规则与公司资格，再核对是否实际发生。 这是整机竞争与应用需求参照，不是上游供应关系。实际订单、产品定位和客户验收需要分别核实。",
+          "basis": [
+            {
+              "source": "ubtech-results",
+              "page": 3
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用／资本开支",
+              "direction": "条件性变化",
+              "mechanism": "若公司实际参与项目，研发、设备和试制投入可能先发生",
+              "unknown": "参与资格、实际项目及投入"
+            },
+            {
+              "indicator": "对应业务营业收入",
+              "direction": "条件性变化",
+              "mechanism": "需从示范采购或客户需求落实到有效订单及交付",
+              "unknown": "明确采购、客户、订单和验收"
+            },
+            {
+              "indicator": "政府补助相关项目",
+              "direction": "不预设收益",
+              "mechanism": "仅在实际获批且财报有依据时进一步核查",
+              "unknown": "本公司获批文件、金额与财务披露"
+            },
+            {
+              "indicator": "经营现金流",
+              "direction": "方向未定",
+              "mechanism": "研发、设备支出、交付与回款的时间差",
+              "unknown": "实际支出及回款；不把政策目标当现金流"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "top",
+          "firstHit": "技术攻关与示范应用安排 → 关节执行器及灵巧手电机需求",
+          "business": "直线执行器、旋转执行器、灵巧手电机",
+          "relationshipGate": "政策支持不等于该公司获单或补助。先确认具体项目、采购/补助规则与公司资格，再核对是否实际发生。 半年报支持部分产品小批量交付，但没有据此确认Optimus客户关系、对应机型或份额。该断点未补齐前不能判断确定受益。",
+          "basis": [
+            {
+              "source": "601689-2026h1",
+              "page": 12
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用／资本开支",
+              "direction": "条件性变化",
+              "mechanism": "若公司实际参与项目，研发、设备和试制投入可能先发生",
+              "unknown": "参与资格、实际项目及投入"
+            },
+            {
+              "indicator": "对应业务营业收入",
+              "direction": "条件性变化",
+              "mechanism": "需从示范采购或客户需求落实到有效订单及交付",
+              "unknown": "明确采购、客户、订单和验收"
+            },
+            {
+              "indicator": "政府补助相关项目",
+              "direction": "不预设收益",
+              "mechanism": "仅在实际获批且财报有依据时进一步核查",
+              "unknown": "本公司获批文件、金额与财务披露"
+            },
+            {
+              "indicator": "经营现金流",
+              "direction": "方向未定",
+              "mechanism": "研发、设备支出、交付与回款的时间差",
+              "unknown": "实际支出及回款；不把政策目标当现金流"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "sanhua",
+          "firstHit": "技术攻关与示范应用安排 → 执行器研发、客户验证与潜在定点",
+          "business": "仿生机器人机电执行器",
+          "relationshipGate": "政策支持不等于该公司获单或补助。先确认具体项目、采购/补助规则与公司资格，再核对是否实际发生。 原文是仿生机器人口径；人形用途、客户、验证结果与商业订单都需补证。",
+          "basis": [
+            {
+              "source": "002050-2026h1",
+              "page": 11
+            },
+            {
+              "source": "002050-2025fy",
+              "page": 28
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用／资本开支",
+              "direction": "条件性变化",
+              "mechanism": "若公司实际参与项目，研发、设备和试制投入可能先发生",
+              "unknown": "参与资格、实际项目及投入"
+            },
+            {
+              "indicator": "对应业务营业收入",
+              "direction": "条件性变化",
+              "mechanism": "需从示范采购或客户需求落实到有效订单及交付",
+              "unknown": "明确采购、客户、订单和验收"
+            },
+            {
+              "indicator": "政府补助相关项目",
+              "direction": "不预设收益",
+              "mechanism": "仅在实际获批且财报有依据时进一步核查",
+              "unknown": "本公司获批文件、金额与财务披露"
+            },
+            {
+              "indicator": "经营现金流",
+              "direction": "方向未定",
+              "mechanism": "研发、设备支出、交付与回款的时间差",
+              "unknown": "实际支出及回款；不把政策目标当现金流"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "green",
+          "firstHit": "技术攻关与示范应用安排 → 谐波传动方案、规格与验证需求",
+          "business": "谐波减速器及相关关节部件",
+          "relationshipGate": "政策支持不等于该公司获单或补助。先确认具体项目、采购/补助规则与公司资格，再核对是否实际发生。 必须先确认机型采用相应传动方案，并确认本公司的供应资格。具身与工业机器人总量不能直接算成人形需求。",
+          "basis": [
+            {
+              "source": "688017-2026h1",
+              "page": 11
+            },
+            {
+              "source": "688017-2025fy",
+              "page": 19
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用／资本开支",
+              "direction": "条件性变化",
+              "mechanism": "若公司实际参与项目，研发、设备和试制投入可能先发生",
+              "unknown": "参与资格、实际项目及投入"
+            },
+            {
+              "indicator": "对应业务营业收入",
+              "direction": "条件性变化",
+              "mechanism": "需从示范采购或客户需求落实到有效订单及交付",
+              "unknown": "明确采购、客户、订单和验收"
+            },
+            {
+              "indicator": "政府补助相关项目",
+              "direction": "不预设收益",
+              "mechanism": "仅在实际获批且财报有依据时进一步核查",
+              "unknown": "本公司获批文件、金额与财务披露"
+            },
+            {
+              "indicator": "经营现金流",
+              "direction": "方向未定",
+              "mechanism": "研发、设备支出、交付与回款的时间差",
+              "unknown": "实际支出及回款；不把政策目标当现金流"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "moons",
+          "firstHit": "技术攻关与示范应用安排 → 电机、驱动与关节模组的设计选型",
+          "business": "无框／空心杯电机、驱动与一体化关节模组",
+          "relationshipGate": "政策支持不等于该公司获单或补助。先确认具体项目、采购/补助规则与公司资格，再核对是否实际发生。 披露的是供货能力；实际人形订单、机型供应关系及收入仍需核实。机器人应用收入增速不能代替人形增速。",
+          "basis": [
+            {
+              "source": "603728-2026h1",
+              "page": 19
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用／资本开支",
+              "direction": "条件性变化",
+              "mechanism": "若公司实际参与项目，研发、设备和试制投入可能先发生",
+              "unknown": "参与资格、实际项目及投入"
+            },
+            {
+              "indicator": "对应业务营业收入",
+              "direction": "条件性变化",
+              "mechanism": "需从示范采购或客户需求落实到有效订单及交付",
+              "unknown": "明确采购、客户、订单和验收"
+            },
+            {
+              "indicator": "政府补助相关项目",
+              "direction": "不预设收益",
+              "mechanism": "仅在实际获批且财报有依据时进一步核查",
+              "unknown": "本公司获批文件、金额与财务披露"
+            },
+            {
+              "indicator": "经营现金流",
+              "direction": "方向未定",
+              "mechanism": "研发、设备支出、交付与回款的时间差",
+              "unknown": "实际支出及回款；不把政策目标当现金流"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "zhongda",
+          "firstHit": "技术攻关与示范应用安排 → 关节与减速器的研发和客户验证",
+          "business": "人形机器人关节减速器及一体化关节项目",
+          "relationshipGate": "政策支持不等于该公司获单或补助。先确认具体项目、采购/补助规则与公司资格，再核对是否实际发生。 具体项目证据来自年报研发披露；客户名单不能证明对应人形机型订单。先补当前研发及验证进度。",
+          "basis": [
+            {
+              "source": "002896-2025fy",
+              "page": 24
+            },
+            {
+              "source": "002896-2026h1",
+              "page": 9
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "研发费用／资本开支",
+              "direction": "条件性变化",
+              "mechanism": "若公司实际参与项目，研发、设备和试制投入可能先发生",
+              "unknown": "参与资格、实际项目及投入"
+            },
+            {
+              "indicator": "对应业务营业收入",
+              "direction": "条件性变化",
+              "mechanism": "需从示范采购或客户需求落实到有效订单及交付",
+              "unknown": "明确采购、客户、订单和验收"
+            },
+            {
+              "indicator": "政府补助相关项目",
+              "direction": "不预设收益",
+              "mechanism": "仅在实际获批且财报有依据时进一步核查",
+              "unknown": "本公司获批文件、金额与财务披露"
+            },
+            {
+              "indicator": "经营现金流",
+              "direction": "方向未定",
+              "mechanism": "研发、设备支出、交付与回款的时间差",
+              "unknown": "实际支出及回款；不把政策目标当现金流"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "tesla",
+          "firstHit": "中国本土研发与应用体系变化 → 跨境竞争、产品适配与潜在采购",
+          "business": "Optimus研发及生产准备",
+          "relationshipGate": "这是可能的间接竞争或需求影响。不能因中国政策推出就认定海外公司有直接补助或订单；仍需核实其具体经营主体、客户、产品及参与资格。",
+          "basis": [
+            {
+              "source": "tesla-2026q2",
+              "page": null
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "相关产品收入",
+              "direction": "条件性增减",
+              "mechanism": "本土客户采购或竞争变化→实际订单与交付",
+              "unknown": "具体客户、竞争替代与订单"
+            },
+            {
+              "indicator": "研发／本地化投入",
+              "direction": "取决于公司实际响应",
+              "mechanism": "若开展产品适配或合作，可能发生投入",
+              "unknown": "公开披露的项目、经营主体及金额"
+            },
+            {
+              "indicator": "毛利与经营现金流",
+              "direction": "方向未定",
+              "mechanism": "价格竞争、交付及回款条件可能共同变化",
+              "unknown": "产品价格、成本与交易条款"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "hds",
+          "firstHit": "中国本土研发与应用体系变化 → 跨境竞争、产品适配与潜在采购",
+          "business": "HarmonicDrive®精密传动及运动控制产品",
+          "relationshipGate": "这是可能的间接竞争或需求影响。不能因中国政策推出就认定海外公司有直接补助或订单；仍需核实其具体经营主体、客户、产品及参与资格。",
+          "basis": [
+            {
+              "source": "hds-business",
+              "page": null
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "相关产品收入",
+              "direction": "条件性增减",
+              "mechanism": "本土客户采购或竞争变化→实际订单与交付",
+              "unknown": "具体客户、竞争替代与订单"
+            },
+            {
+              "indicator": "研发／本地化投入",
+              "direction": "取决于公司实际响应",
+              "mechanism": "若开展产品适配或合作，可能发生投入",
+              "unknown": "公开披露的项目、经营主体及金额"
+            },
+            {
+              "indicator": "毛利与经营现金流",
+              "direction": "方向未定",
+              "mechanism": "价格竞争、交付及回款条件可能共同变化",
+              "unknown": "产品价格、成本与交易条款"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        }
+      ],
+      "noticeSource": "miit-humanoid-guidance"
+    },
+    {
+      "id": "demand-stress",
+      "category": "供需",
+      "type": "hypothetical",
+      "date": null,
+      "title": "假设：客户延后交付或要求降价",
+      "source": null,
+      "locator": "用户研究情景，无对应已发生新闻",
+      "fact": "明确假设交付节奏或售价变化，用来检验下行情景。没有声称某家公司或客户已经发生延期、降价或订单取消。",
+      "steps": [
+        {
+          "title": "设定压力情景",
+          "kind": "假设",
+          "detail": "先写明交付延迟或价格下降的假设，不能当成已发生消息。"
+        },
+        {
+          "title": "受影响的具体产品",
+          "kind": "条件传导",
+          "detail": "只影响确有相应订单或研发项目的业务，不扩展到整家公司全部收入。"
+        },
+        {
+          "title": "交付、价格与成本",
+          "kind": "必须补证",
+          "detail": "核对合同变更、验收、材料成本、良率和备货。"
+        },
+        {
+          "title": "收入、毛利与现金流",
+          "kind": "条件传导",
+          "detail": "当期收入可能后移，毛利可能受压；现金影响仍取决于库存及回款。"
+        }
+      ],
+      "companyPaths": [
+        {
+          "companyId": "ubtech",
+          "firstHit": "客户订单／交付节奏与售价 → 整机应用与客户采购",
+          "business": "全尺寸人形机器人产品及服务",
+          "relationshipGate": "这是压力情景，不是关于该公司的已发生事实。若尚无商业订单，主要影响研发、验证与投入预期，不能直接声称已有收入下滑。 这是整机竞争与应用需求参照，不是上游供应关系。实际订单、产品定位和客户验收需要分别核实。",
+          "basis": [
+            {
+              "source": "ubtech-results",
+              "page": 3
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "当期相关收入",
+              "direction": "若条件成立可能减少或后移",
+              "mechanism": "交付延期或价格下降→当期确认数量/金额变化",
+              "unknown": "真实订单、变更、价格与验收"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "可能承压，非必然",
+              "mechanism": "价格、良率、产能利用率和成本变化共同影响",
+              "unknown": "公司成本与调价条件"
+            },
+            {
+              "indicator": "存货／经营现金流",
+              "direction": "可能占用更多现金",
+              "mechanism": "备货不变而交付或回款延迟→库存/应收占用",
+              "unknown": "备货、账期与客户实际付款"
+            },
+            {
+              "indicator": "研发与资本开支",
+              "direction": "可增、可减或延期",
+              "mechanism": "公司可能调整研发或扩产节奏",
+              "unknown": "董事会/公司披露的实际调整"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "top",
+          "firstHit": "客户订单／交付节奏与售价 → 关节执行器及灵巧手电机需求",
+          "business": "直线执行器、旋转执行器、灵巧手电机",
+          "relationshipGate": "这是压力情景，不是关于该公司的已发生事实。若尚无商业订单，主要影响研发、验证与投入预期，不能直接声称已有收入下滑。 半年报支持部分产品小批量交付，但没有据此确认Optimus客户关系、对应机型或份额。该断点未补齐前不能判断确定受益。",
+          "basis": [
+            {
+              "source": "601689-2026h1",
+              "page": 12
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "当期相关收入",
+              "direction": "若条件成立可能减少或后移",
+              "mechanism": "交付延期或价格下降→当期确认数量/金额变化",
+              "unknown": "真实订单、变更、价格与验收"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "可能承压，非必然",
+              "mechanism": "价格、良率、产能利用率和成本变化共同影响",
+              "unknown": "公司成本与调价条件"
+            },
+            {
+              "indicator": "存货／经营现金流",
+              "direction": "可能占用更多现金",
+              "mechanism": "备货不变而交付或回款延迟→库存/应收占用",
+              "unknown": "备货、账期与客户实际付款"
+            },
+            {
+              "indicator": "研发与资本开支",
+              "direction": "可增、可减或延期",
+              "mechanism": "公司可能调整研发或扩产节奏",
+              "unknown": "董事会/公司披露的实际调整"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "sanhua",
+          "firstHit": "客户订单／交付节奏与售价 → 执行器研发、客户验证与潜在定点",
+          "business": "仿生机器人机电执行器",
+          "relationshipGate": "这是压力情景，不是关于该公司的已发生事实。若尚无商业订单，主要影响研发、验证与投入预期，不能直接声称已有收入下滑。 原文是仿生机器人口径；人形用途、客户、验证结果与商业订单都需补证。",
+          "basis": [
+            {
+              "source": "002050-2026h1",
+              "page": 11
+            },
+            {
+              "source": "002050-2025fy",
+              "page": 28
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "当期相关收入",
+              "direction": "若条件成立可能减少或后移",
+              "mechanism": "交付延期或价格下降→当期确认数量/金额变化",
+              "unknown": "真实订单、变更、价格与验收"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "可能承压，非必然",
+              "mechanism": "价格、良率、产能利用率和成本变化共同影响",
+              "unknown": "公司成本与调价条件"
+            },
+            {
+              "indicator": "存货／经营现金流",
+              "direction": "可能占用更多现金",
+              "mechanism": "备货不变而交付或回款延迟→库存/应收占用",
+              "unknown": "备货、账期与客户实际付款"
+            },
+            {
+              "indicator": "研发与资本开支",
+              "direction": "可增、可减或延期",
+              "mechanism": "公司可能调整研发或扩产节奏",
+              "unknown": "董事会/公司披露的实际调整"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "green",
+          "firstHit": "客户订单／交付节奏与售价 → 谐波传动方案、规格与验证需求",
+          "business": "谐波减速器及相关关节部件",
+          "relationshipGate": "这是压力情景，不是关于该公司的已发生事实。若尚无商业订单，主要影响研发、验证与投入预期，不能直接声称已有收入下滑。 必须先确认机型采用相应传动方案，并确认本公司的供应资格。具身与工业机器人总量不能直接算成人形需求。",
+          "basis": [
+            {
+              "source": "688017-2026h1",
+              "page": 11
+            },
+            {
+              "source": "688017-2025fy",
+              "page": 19
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "当期相关收入",
+              "direction": "若条件成立可能减少或后移",
+              "mechanism": "交付延期或价格下降→当期确认数量/金额变化",
+              "unknown": "真实订单、变更、价格与验收"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "可能承压，非必然",
+              "mechanism": "价格、良率、产能利用率和成本变化共同影响",
+              "unknown": "公司成本与调价条件"
+            },
+            {
+              "indicator": "存货／经营现金流",
+              "direction": "可能占用更多现金",
+              "mechanism": "备货不变而交付或回款延迟→库存/应收占用",
+              "unknown": "备货、账期与客户实际付款"
+            },
+            {
+              "indicator": "研发与资本开支",
+              "direction": "可增、可减或延期",
+              "mechanism": "公司可能调整研发或扩产节奏",
+              "unknown": "董事会/公司披露的实际调整"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "moons",
+          "firstHit": "客户订单／交付节奏与售价 → 电机、驱动与关节模组的设计选型",
+          "business": "无框／空心杯电机、驱动与一体化关节模组",
+          "relationshipGate": "这是压力情景，不是关于该公司的已发生事实。若尚无商业订单，主要影响研发、验证与投入预期，不能直接声称已有收入下滑。 披露的是供货能力；实际人形订单、机型供应关系及收入仍需核实。机器人应用收入增速不能代替人形增速。",
+          "basis": [
+            {
+              "source": "603728-2026h1",
+              "page": 19
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "当期相关收入",
+              "direction": "若条件成立可能减少或后移",
+              "mechanism": "交付延期或价格下降→当期确认数量/金额变化",
+              "unknown": "真实订单、变更、价格与验收"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "可能承压，非必然",
+              "mechanism": "价格、良率、产能利用率和成本变化共同影响",
+              "unknown": "公司成本与调价条件"
+            },
+            {
+              "indicator": "存货／经营现金流",
+              "direction": "可能占用更多现金",
+              "mechanism": "备货不变而交付或回款延迟→库存/应收占用",
+              "unknown": "备货、账期与客户实际付款"
+            },
+            {
+              "indicator": "研发与资本开支",
+              "direction": "可增、可减或延期",
+              "mechanism": "公司可能调整研发或扩产节奏",
+              "unknown": "董事会/公司披露的实际调整"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "zhongda",
+          "firstHit": "客户订单／交付节奏与售价 → 关节与减速器的研发和客户验证",
+          "business": "人形机器人关节减速器及一体化关节项目",
+          "relationshipGate": "这是压力情景，不是关于该公司的已发生事实。若尚无商业订单，主要影响研发、验证与投入预期，不能直接声称已有收入下滑。 具体项目证据来自年报研发披露；客户名单不能证明对应人形机型订单。先补当前研发及验证进度。",
+          "basis": [
+            {
+              "source": "002896-2025fy",
+              "page": 24
+            },
+            {
+              "source": "002896-2026h1",
+              "page": 9
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "当期相关收入",
+              "direction": "若条件成立可能减少或后移",
+              "mechanism": "交付延期或价格下降→当期确认数量/金额变化",
+              "unknown": "真实订单、变更、价格与验收"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "可能承压，非必然",
+              "mechanism": "价格、良率、产能利用率和成本变化共同影响",
+              "unknown": "公司成本与调价条件"
+            },
+            {
+              "indicator": "存货／经营现金流",
+              "direction": "可能占用更多现金",
+              "mechanism": "备货不变而交付或回款延迟→库存/应收占用",
+              "unknown": "备货、账期与客户实际付款"
+            },
+            {
+              "indicator": "研发与资本开支",
+              "direction": "可增、可减或延期",
+              "mechanism": "公司可能调整研发或扩产节奏",
+              "unknown": "董事会/公司披露的实际调整"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "tesla",
+          "firstHit": "客户订单／交付节奏与售价 → 整机研发与制造准备",
+          "business": "Optimus研发及生产准备",
+          "relationshipGate": "这是压力情景，不是关于该公司的已发生事实。若尚无商业订单，主要影响研发、验证与投入预期，不能直接声称已有收入下滑。 事件主体自身的生产准备可作为观察点；披露日不等于费用发生日，产能目标不等于销量。",
+          "basis": [
+            {
+              "source": "tesla-2026q2",
+              "page": null
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "当期相关收入",
+              "direction": "若条件成立可能减少或后移",
+              "mechanism": "交付延期或价格下降→当期确认数量/金额变化",
+              "unknown": "真实订单、变更、价格与验收"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "可能承压，非必然",
+              "mechanism": "价格、良率、产能利用率和成本变化共同影响",
+              "unknown": "公司成本与调价条件"
+            },
+            {
+              "indicator": "存货／经营现金流",
+              "direction": "可能占用更多现金",
+              "mechanism": "备货不变而交付或回款延迟→库存/应收占用",
+              "unknown": "备货、账期与客户实际付款"
+            },
+            {
+              "indicator": "研发与资本开支",
+              "direction": "可增、可减或延期",
+              "mechanism": "公司可能调整研发或扩产节奏",
+              "unknown": "董事会/公司披露的实际调整"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        },
+        {
+          "companyId": "hds",
+          "firstHit": "客户订单／交付节奏与售价 → 精密传动技术路线与潜在产品适配",
+          "business": "HarmonicDrive®精密传动及运动控制产品",
+          "relationshipGate": "这是压力情景，不是关于该公司的已发生事实。若尚无商业订单，主要影响研发、验证与投入预期，不能直接声称已有收入下滑。 官网只支持产品层面对照。本轮未确认特定人形项目、客户或收入，不能列为确定受益公司。",
+          "basis": [
+            {
+              "source": "hds-business",
+              "page": null
+            }
+          ],
+          "financial": [
+            {
+              "indicator": "当期相关收入",
+              "direction": "若条件成立可能减少或后移",
+              "mechanism": "交付延期或价格下降→当期确认数量/金额变化",
+              "unknown": "真实订单、变更、价格与验收"
+            },
+            {
+              "indicator": "毛利率／毛利",
+              "direction": "可能承压，非必然",
+              "mechanism": "价格、良率、产能利用率和成本变化共同影响",
+              "unknown": "公司成本与调价条件"
+            },
+            {
+              "indicator": "存货／经营现金流",
+              "direction": "可能占用更多现金",
+              "mechanism": "备货不变而交付或回款延迟→库存/应收占用",
+              "unknown": "备货、账期与客户实际付款"
+            },
+            {
+              "indicator": "研发与资本开支",
+              "direction": "可增、可减或延期",
+              "mechanism": "公司可能调整研发或扩产节奏",
+              "unknown": "董事会/公司披露的实际调整"
+            }
+          ],
+          "kind": "条件分析，不是业绩预测"
+        }
       ]
     }
   ],
@@ -788,5 +1887,54 @@
       "label": "证据不足",
       "rule": "在明确检索范围内无法建立关系，不等于没有业务。"
     }
-  ]
+  ],
+  "methodology": {
+    "aiRoles": [
+      {
+        "actor": "AI",
+        "does": "从公开原文候选中选择证据片段；帮助定位关键业务与限制措辞。",
+        "doesNot": "不自行生成客户、订单、收入数字、买卖建议或保证收益。"
+      },
+      {
+        "actor": "程序校验",
+        "does": "核对公司、来源、页码、原文包含、数字单位和输入边界；异常时保留旧结果。",
+        "doesNot": "原文包含校验不等于业务真实的独立审计。"
+      },
+      {
+        "actor": "使用者",
+        "does": "阅读原文与上下文，确认后保存个人研究版本，保留旧记录。",
+        "doesNot": "用户采纳不等于公司公告、平台认证或审计意见。"
+      }
+    ],
+    "boundaries": [
+      {
+        "bad": "属于机器人概念板块，所以有人形机器人收入。",
+        "correct": "成分股只可用于发现对象；收入必须有对应产品、用途和报告期证据。"
+      },
+      {
+        "bad": "没找到收入，所以公司没有业务或在造假。",
+        "correct": "明确检索范围，保持未知；没有披露不等于零或不存在。"
+      },
+      {
+        "bad": "海外扩产，所以这家公司必然受益、利润必增。",
+        "correct": "逐项核实技术路线、供应关系、订单、交付、价格和成本，保留断点。"
+      },
+      {
+        "bad": "供货能力等于实际交付，订单等于收入。",
+        "correct": "能力、验证、订单、交付、收入确认分阶段展示。"
+      },
+      {
+        "bad": "把广义机器人或多个应用领域的收入归为人形收入。",
+        "correct": "保留原始统计范围和单位，不能拆分时标未知。"
+      }
+    ],
+    "unknowns": [
+      "扶摇、iFinD及实时行情未接入，热门榜不伪造数据。",
+      "只有有限公司与公开材料样本；海外新公告和政策尚未自动全量采集。",
+      "模型及规则可能漏读语义、表格和跨段关系，仍需要复核。",
+      "历史存在本机浏览器，不是多人审核数据库。",
+      "预览URL有授权时效，长期公开域名仍待配置。"
+    ],
+    "disclaimer": "本产品仅供研究参考，不构成投资建议。"
+  }
 }

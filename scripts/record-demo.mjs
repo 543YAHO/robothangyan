@@ -15,9 +15,9 @@ try{
  await page.locator('#search').fill('拓普');await caption('输入公司名，先看业务阶段、用途边界，以及哪些事实仍不能确认。');await pause();
  await page.screenshot({path:path.join(out,'company.png'),fullPage:true});
  await page.locator('.source').first().scrollIntoViewIfNeeded();await caption('每条判断保留原文、日期与页码。供货能力、实际交付、确认收入分别判断。');await pause();
- await page.locator('[data-view=industry]').click();await page.evaluate(()=>scrollTo(0,0));await caption('按功能层和产品节点组织产业链，公司归属落实到具体产品和证据。');await pause();await page.screenshot({path:path.join(out,'industry.png'),fullPage:true});
+ await page.locator('[data-view=industry]').click();await page.evaluate(()=>scrollTo(0,0));await caption('按功能层和产品节点组织产业链，公司归属落实到具体产品和证据。');await pause();await page.screenshot({path:path.join(out,'industry.png'),fullPage:true});await page.locator('[data-view=methods]').click();await caption('AI选择证据，程序校验出处，使用者复核。数据异常保留旧结果；本产品不构成投资建议。');await pause(8000);await page.screenshot({path:path.join(out,'methods.png'),fullPage:true});await page.locator('[data-view=industry]').click();
  await page.locator('[data-company-open=green]').first().click();await page.locator('#tab-compare').click();await caption('中外比较解释“为什么可比”，同时保留用途、币种、期间和业务组合的限制。');await pause();
- await page.locator('#tab-impact').click();await caption('真实事件逐步传导到环节、公司和财务指标。供应关系没有证据时，停止推导业绩受益。');await pause();
+ await page.locator('#tab-impact').click();await caption('海外、政策和供需变化落实到公司产品，以及收入、毛利、存货和现金流。缺少供应关系时不判断确定受益。');await pause();await page.locator('#event-select').selectOption('demand-stress');await pause(6000);await page.screenshot({path:path.join(out,'transmission.png'),fullPage:true});
  await page.locator('[data-company=top]').click();await page.locator('#tab-update').click();await caption('手动更新：查询公开报告，提取证据候选，再由使用者复核。');await page.locator('#load-sources').click();await page.locator('#report-select').waitFor({timeout:30000});await page.locator('#analyze-report').click();
  await caption('正在真实读取报告和调用已配置的分析服务。异常时保留旧结论，不制造新进展。');
  await page.locator('.candidate').first().waitFor({timeout:50000});await page.screenshot({path:path.join(out,'update.png'),fullPage:true});
