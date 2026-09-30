@@ -15,7 +15,7 @@
 - `POST https://quantapi.51ifind.com/api/v1/get_access_token`：请求头 `refresh_token`，结果 `data.access_token`。
 - `POST https://quantapi.51ifind.com/api/v1/real_time_quotation`：请求头 `access_token`，JSON内容 `{"codes":"002050.SZ,601689.SH","indicators":"latest"}`。
 - [官方使用流程](https://quantapi.51ifind.com/gwstatic/static/ds_web/quantapi-web/help-center/deploy.html)：可通过客户端“超级命令 → 工具 → refresh_token查询”，也可通过[网页版超级命令 → 账号详情](https://quantapi.10jqka.com.cn/gwstatic/static/ds_web/super-command-web/index.html#/AccountDetails)获取refresh_token；Mac可优先使用网页方式。
-- [官方权限说明](https://quantapi.51ifind.com/gwstatic/static/ds_web/quantapi-web/help-center/permission.html)：免费版可用iFinD账号登录，无需先申请试用。先核对账号实际字段/HTTP权限，不能据此承诺任何账号都能取到全部所需数据。
+- [官方权限说明](https://quantapi.51ifind.com/gwstatic/static/ds_web/quantapi-web/help-center/permission.html)：免费版可用iFinD账号登录，无需先申请试用。但官方FAQ说明免费接口与已有iFinD终端账号权益有关，不等于任意同花顺注册号可用。没有iFinD账号时先申请数据接口试用或咨询客服；先核对账号实际字段/HTTP权限，不能承诺全部所需数据可取。
 
 文档核对日期：2026-09-30。本项目没有绕过授权或猜测私有MCP端点。
 
