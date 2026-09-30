@@ -168,7 +168,7 @@ test('行情DOM：无凭证和无展示许可时禁用取数',async()=>{
 test('行情DOM：刷新网络失败标旧，权限失效清除旧行情',async()=>{
  let mode='ok';const p=panel(async name=>{if(name==='providers')return ready;if(mode!=='ok')throw Object.assign(Error('测试错误'),{code:mode});return structuredClone(quoteFixture);});
  await p.button('check-providers').onclick();await p.button('refresh-quotes').onclick();assert.ok(p.host.querySelector('table'));
- mode='IFIND_TIMEOUT';await p.button('refresh-quotes').onclick();assert.match(p.host.textContent,/此前成功获取的记录/);
+ mode='IFIND_TIMEOUT';await p.button('refresh-quotes').onclick();assert.match(p.host.textContent,/刷新暂时失败，以下保留的是上次价格/);
  mode='IFIND_AUTH';await p.button('refresh-quotes').onclick();assert.equal(p.host.querySelector('table'),null);assert.equal(p.button('refresh-quotes').disabled,true);
 });
 test('行情DOM：错公司或坏数字不替换旧快照，停用许可清除旧行情',async()=>{

@@ -2,24 +2,24 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>机器人实证 · 机器人证据研究工作台</title>
+<meta name="theme-color" content="#fcf8f3">
+<title>朔风 · 你的行业量化助手</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header><div class="bar"><div class="brand"><span>◈</span> 机器人实证 <span class="meta">／ EVIDENCE FIRST</span></div><span class="pill">公开证据 · 手动更新</span></div></header>
-<nav class="globalnav" aria-label="主要功能"><button data-view="companies" aria-pressed="true">公司核查</button><button data-view="industry" aria-pressed="false">行业与公司发现</button><button data-view="history" aria-pressed="false">更新记录</button><button data-view="methods" aria-pressed="false">方法与边界</button><span id="service-state" class="meta" role="status">正在连接更新服务</span></nav>
-<div id="fatal" hidden role="alert">研究资料或核验组件暂未加载，当前不生成分级。请刷新重试。</div>
+<header><div class="bar"><div class="brand"><span aria-hidden="true">◈</span> 朔风 <span class="meta">把研究，做得明白一点</span></div><span class="pill">从公开资料出发</span></div></header>
+<nav class="globalnav" aria-label="主要功能"><button data-view="companies" aria-pressed="true">看公司</button><button data-view="industry" aria-pressed="false">看产业链</button><button data-view="history" aria-pressed="false">我的记录</button><span id="service-state" class="meta" role="status">正在连接资料更新服务</span></nav>
+<div id="fatal" hidden role="alert">资料暂时没有加载成功，请刷新后重试。</div>
 <main class="wrap" id="app" hidden>
-<div class="intro"><div><div class="eyebrow">从公司出发，追溯每个判断</div><h1>概念背后，有多少业务证据？</h1><p>先看做到哪一步，再看证据能证明什么。商业化阶段、应用口径与未知项分别展示。</p></div><div class="count"><strong id="sample-count">8</strong> 家样本<br>2026-09-30 核查</div></div>
-<div class="notice">本轮主要核查2026年半年报及2025年年报，未穷尽后续公告。当前展示研究样本；行情暂不可用，未生成热门排名。</div>
+<div class="intro"><div><div class="eyebrow">人形机器人 · 公司与产业链</div><h1>你的行业量化助手</h1><p>看清热度背后，公司的真实进展</p><ol class="reading-steps" aria-label="建议的阅读顺序"><li>找公司</li><li>看进展</li><li>读出处</li><li>做比较</li></ol></div><div class="count"><strong id="sample-count">8</strong> 家公司<br>最近核对：2026-09-30</div></div>
+<div class="notice">资料以2026年半年报、2025年年报为主，可能遗漏后续公告。行情仍待授权开通。</div>
 <div id="global-message" class="meta" role="status"></div>
 <section id="industry-view" class="panel" hidden></section>
 <section id="history-view" class="panel" hidden></section>
-<section id="methods-view" class="panel" hidden></section>
-<section id="company-view"><div class="controls"><input class="search" id="search" type="search" aria-label="搜索公司、代码或产品" placeholder="搜索公司、代码或产品，如：拓普、TSLA、减速器"><select id="sector" aria-label="筛选产业链环节"><option value="all">全部产业链环节</option></select><select id="scope" aria-label="筛选人形用途范围"><option value="all">保留关联候选</option><option value="explicit">仅明确人形用途</option></select></div>
-<div class="layout"><aside class="rail"><div class="meta" id="result-count" aria-live="polite"></div><div class="list" id="list"></div><details><summary>分级规则</summary><p>收入 → 订单／交付 → 客户验证 → 具体研发 → 仅表态 → 证据不足。只能依据对应产品的事实归档；不能确定时保留待核状态。</p><p>本轮没有为了凑齐六档，强行把任何样本判为“仅表态”。权威来源中的预测仍然是预测。</p><p>市场热度、代表性与商业化程度分别处理。本列表按研究样本顺序展示。</p></details></aside><section class="panel" id="detail" aria-label="公司证据详情"></section></div>
+<section id="company-view"><div class="controls"><input class="search" id="search" type="search" aria-label="搜索公司、代码或产品" placeholder="想了解哪家公司？搜名称、代码或产品"><select id="sector" aria-label="按产业链环节筛选"><option value="all">全部产业链环节</option></select><select id="scope" aria-label="筛选人形机器人相关业务"><option value="all">全部相关公司</option><option value="explicit">已确认人形用途</option></select></div>
+<div class="layout"><aside class="rail"><div class="meta" id="result-count" aria-live="polite"></div><div class="list" id="list"></div><details><summary>如何理解业务进展？</summary><p>有收入、拿到订单、开始交付、客户试用和研发，是不同的阶段。我们根据公开材料逐项区分；还不清楚的地方会标出来。</p><p>公司列表方便你找资料，不是投资推荐或热门排名。</p></details></aside><section class="panel" id="detail" aria-label="公司研究详情"></section></div>
 </section>
-<div class="footer"><strong>本产品仅供研究参考，不构成投资建议。</strong> 不提供买卖建议或收益保证。未披露 ≠ 0；未检索到 ≠ 不存在；具备产能 ≠ 已经交付。<br><a href="核查记录.md">完整核查记录</a> · <a href="research-data.json">结构化证据数据</a> · <a href="README.md">范围与运行说明</a> · <a href="测试说明.md">测试说明</a></div>
+<div class="footer"><strong>仅供研究参考，不构成投资建议。</strong> 未披露的信息，不代表不存在。<br><a href="核查记录.md">查看资料来源</a> · <a href="README.md">关于这个项目 · README</a></div>
 </main>
 <script src="data.js"></script>
 <script src="guards.js"></script>

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-30",
+  "checkedAt": "2026-09-30T18:22:44.638178+08:00",
   "companies": 8,
   "sourceRecords": 13,
   "cachedHashesVerified": [
@@ -19,6 +19,6 @@
     "miit-humanoid-guidance",
     "miit-guidance-interpretation"
   ],
-  "rule": "没有缓存时不伪造文件指纹。来源与页码并不替代业务语义复核。",
+  "rule": "SHA-256核对读取版本；未缓存来源没有伪造指纹。来源正式性及原文包含不替代业务语义复核。",
   "datasetVersion": "0.3"
 }
