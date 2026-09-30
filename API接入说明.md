@@ -55,7 +55,7 @@ IFIND_DISPLAY_AUTHORIZED=false
 npm start
 ```
 
-使用HTTP地址打开，不能直接打开 `file:///.../index.html` 运行接口。进入“行业与公司发现 → 市场热门 → 检查接入状态 → 获取A股样本最新价”。
+使用HTTP地址打开，不能直接打开 `file:///.../index.html` 运行接口。进入“看产业链 → 行情动态 → 查看开通状态 → 刷新A股公司价格”。
 
 ## 腾讯云配置
 

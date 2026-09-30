@@ -1,13 +1,120 @@
 {
-  "checkedAt": "2026-09-30T09:52:48.697540+00:00",
-  "deploymentId": "dp36lj5qs8vx",
-  "deploymentRevision": "6be4e88",
-  "providersStatus": 200,
-  "providerState": "not_configured",
-  "statusHTTP": 200,
-  "quotesHTTP": 503,
-  "quotesCode": "IFIND_NOT_CONFIGURED",
-  "envHTTP": 404,
-  "realIfindRequestMade": false,
-  "mainlandIndependentNetworkVerified": false
+  "checkedAt": "2026-09-30T18:27:10.465399+08:00",
+  "deploymentId": "dpcadcntqk79",
+  "codeRevision": "6439d35",
+  "homeStatus": 200,
+  "homeTitleMatches": true,
+  "mainlandIndependentNetworkVerified": false,
+  "permanentDomainVerified": false,
+  "/api/status": {
+    "status": 200,
+    "response": {
+      "ok": true,
+      "version": "0.3",
+      "mode": "model_configured",
+      "dataProviders": {
+        "publicDisclosures": true,
+        "fuyao": false,
+        "ifind": false
+      },
+      "providerReadiness": {
+        "ifindHttp": "not_configured",
+        "ifindMcp": "endpoint_required",
+        "fuyao": "documentation_required"
+      },
+      "manualUpdates": true
+    }
+  },
+  "/api/providers": {
+    "status": 200,
+    "response": {
+      "ifind": {
+        "id": "ifind-http",
+        "name": "iFinD HTTP行情接口",
+        "configured": false,
+        "state": "not_configured",
+        "transport": "HTTP（不是iFinD MCP）",
+        "lastSuccessfulAt": null,
+        "documentation": "https://quantapi.51ifind.com/gwstatic/static/ds_web/quantapi-web/example.html",
+        "scope": "本轮仅连接所选A股样本最新价；尚未连接iFinD产业链、研报或MCP服务。",
+        "missing": [
+          "有数据接口权限的iFinD账号",
+          "refresh_token或仍有效的access_token"
+        ],
+        "displayAuthorized": false
+      },
+      "fuyao": {
+        "id": "fuyao",
+        "name": "扶摇",
+        "configured": false,
+        "state": "documentation_required",
+        "scope": "出题方未提供服务地址、接口协议或凭证，尚无法识别并实现对应接口。"
+      },
+      "ifindMcp": {
+        "id": "ifind-mcp",
+        "name": "iFinD MCP",
+        "configured": false,
+        "state": "endpoint_required",
+        "scope": "HTTP行情接入口不等于MCP；MCP需要另行提供服务端点、鉴权方式和工具说明。"
+      },
+      "coveredCompanies": [
+        {
+          "id": "top",
+          "name": "拓普集团",
+          "code": "601689.SH"
+        },
+        {
+          "id": "sanhua",
+          "name": "三花智控",
+          "code": "002050.SZ"
+        },
+        {
+          "id": "green",
+          "name": "绿的谐波",
+          "code": "688017.SH"
+        },
+        {
+          "id": "moons",
+          "name": "鸣志电器",
+          "code": "603728.SH"
+        },
+        {
+          "id": "zhongda",
+          "name": "中大力德",
+          "code": "002896.SZ"
+        }
+      ],
+      "credentialsInBrowser": false
+    }
+  },
+  "/.env": {
+    "status": 404,
+    "response": "not exposed"
+  },
+  "/api/quotes": {
+    "status": 503,
+    "response": {
+      "error": {
+        "code": "IFIND_NOT_CONFIGURED",
+        "message": "iFinD接口已准备，尚未配置数据凭证。没有向提供方发送请求。"
+      }
+    }
+  },
+  "announcements": {
+    "status": 200,
+    "companyId": "top",
+    "sourceCount": 4
+  },
+  "analysis": {
+    "status": 200,
+    "model": {
+      "used": true,
+      "status": "validated_excerpts",
+      "message": "模型选取了证据片段，已核验原文包含；需要用户复核业务判断。"
+    },
+    "sourceHash": "762f31df5ffde5a346ebf946c17f34d8e3a33777fc43f71d521e5a434ec03416",
+    "pageCount": 188,
+    "factCount": 4,
+    "cached": false
+  }
 }

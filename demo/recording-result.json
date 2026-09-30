@@ -1,6 +1,9 @@
 {
   "status": "completed",
-  "seconds": 110.021,
+  "seconds": 110.008,
   "pageErrors": [],
-  "source": "Recorded actual browser interactions against the supplied URL"
+  "source": "Recorded actual browser interactions against the supplied URL",
+  "timeZone": "Asia/Shanghai",
+  "application": "朔风",
+  "sourceRevision": "6439d352a49b456d33219e6ff41ab6716e711184"
 }

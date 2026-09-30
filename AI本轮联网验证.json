@@ -1,0 +1,70 @@
+{
+  "companyId": "top",
+  "source": {
+    "id": "cninfo-1225521853",
+    "title": "拓普集团2026年半年度报告",
+    "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225521853.PDF",
+    "published": "2026-08-28",
+    "registered": true,
+    "sha256": "762f31df5ffde5a346ebf946c17f34d8e3a33777fc43f71d521e5a434ec03416",
+    "baselineId": "601689-2026h1"
+  },
+  "checkedAt": "2026-09-30T10:27:26.071Z",
+  "pageCount": 188,
+  "facts": [
+    {
+      "id": "ai-12-f50a063",
+      "page": 12,
+      "excerpt": "报告期内，公司机器人业务取得重要进展：直线执行器、旋转执行器及灵巧手电机已进入小批量交付阶段。",
+      "stage": "delivery",
+      "label": "实际交付／供货表述",
+      "reason": "交付仍不等于当期已确认收入。",
+      "scope": "应用口径待核实",
+      "flags": [],
+      "support": "AI选取片段，已校验原文及有限上下文；业务语义仍需复核"
+    },
+    {
+      "id": "ai-13-b7080b0",
+      "page": 13,
+      "excerpt": "报告期内，公司热管理技术及产品已在液冷服务器、储能、机器人等新兴领域实现落地，相关业务累计订单增至17.5亿元",
+      "stage": "insufficient",
+      "label": "阶段无法确认",
+      "scope": "应用口径待核实",
+      "reason": "当前片段不足以确认对应公司的人形商业化阶段，不等于业务不存在。",
+      "flags": [],
+      "support": "AI选取片段，已校验原文及有限上下文；业务语义仍需复核"
+    },
+    {
+      "id": "ai-16-0837e5d",
+      "page": 16,
+      "excerpt": "在机器人领域，公司主要产品包括直线执行器、旋转执行器、灵巧手电机及总成、躯体结构件、足部减震器、电子柔性皮肤等。",
+      "stage": "insufficient",
+      "label": "阶段无法确认",
+      "scope": "应用口径待核实",
+      "reason": "当前片段不足以确认对应公司的人形商业化阶段，不等于业务不存在。",
+      "flags": [],
+      "support": "AI选取片段，已校验原文及有限上下文；业务语义仍需复核"
+    },
+    {
+      "id": "ai-23-a1e9c4a",
+      "page": 23,
+      "excerpt": "公司拟投资50亿元人民币，规划用地 300亩，在宁波经济技术开发区建设机器人核心部件生产基地。",
+      "stage": "statement",
+      "label": "规划或前瞻表述",
+      "reason": "计划与预测不是已实现事实。",
+      "scope": "应用口径待核实",
+      "flags": [],
+      "support": "AI选取片段，已校验原文及有限上下文；业务语义仍需复核"
+    }
+  ],
+  "model": {
+    "used": true,
+    "status": "validated_excerpts",
+    "message": "模型选取了证据片段，已核验原文包含；需要用户复核业务判断。"
+  },
+  "cached": false,
+  "coverage": "巨潮资讯年度及半年度报告（2025年至查询日），不包含全部临时公告、互动回复或研报。",
+  "changed": false,
+  "isLatestInSearch": true,
+  "notice": "结果是待审核证据候选，不会自动改写已确认研究。"
+}

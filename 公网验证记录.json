@@ -22,5 +22,8 @@
     "必须保持本机服务和隧道运行；无长期可用性保证",
     "完整浏览器视觉检查未完成",
     "EdgeOne匿名预览仍返回401，未作为交付URL"
-  ]
+  ],
+  "recordType": "historical_development_check",
+  "supersededBy": "API部署验证.json",
+  "note": "本文件只保留早期临时隧道试跑记录，不是本次产品访问入口。早期EdgeOne 401检查未保存预览Cookie，后来已纠正；以当前API部署验证为准。"
 }
